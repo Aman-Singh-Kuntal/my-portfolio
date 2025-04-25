@@ -1,0 +1,210 @@
+/* Reset & Basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f6ff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4e9cff;
+  }
+  
+  .logo span {
+    color: #ff4e50;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #4e9cff;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #4e9cff, #ff4e50);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #fff;
+    color: #4e9cff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .btn-primary:hover {
+    background: #ffeb3b;
+    color: #333;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #4e9cff;
+  }
+  
+  .colorful {
+    background: linear-gradient(45deg, #ffd3e0, #d4fc79);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Timeline */
+  .timeline-item {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #4e9cff;
+    border-radius: 8px;
+  }
+  
+  .timeline-item span {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  /* Skills */
+  .skills {
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    margin-bottom: 1rem;
+  }
+  
+  .skill span {
+    font-weight: 600;
+  }
+  
+  .skill-bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 5px;
+  }
+  
+  .skill-bar .fill {
+    background: linear-gradient(to right, #4e9cff, #ff4e50);
+    height: 100%;
+  }
+  
+  /* Footer */
+  footer {
+    background: #4e9cff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media(max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
